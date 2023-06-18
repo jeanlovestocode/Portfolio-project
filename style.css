@@ -176,6 +176,21 @@ p {
   opacity: 70%;
 }
 
+.contact-page{
+    padding: 160px 20px;
+}
+.contact-content{
+    text-align: center;
+}
+
+.contact-page h1{
+    font-family: var(--heading-font-family);
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 85px;
+    color: #000000;
+}
+
 @media (max-width: 900px) {
   .main {
     padding: 80px 20px;
@@ -222,6 +237,11 @@ p {
   .project-page h1 {
     font-size: 45px;
     line-height: 56px;
+    text-align: center;
+  }
+
+  .contact-page{
+    padding: 0;
     text-align: center;
   }
 }
