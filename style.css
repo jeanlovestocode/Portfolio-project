@@ -8,10 +8,15 @@
 .logo{
     width:150px;
 }
+
 .nav-bar{
-    background: var(--secondary-color);
+    background: var(--branding-color);
     padding: 20px 0;
 }
+.active{
+    color: var(--branding-color) !important;
+}
+
 body {
   font-family: var(--default-font-family);
 }
@@ -204,6 +209,74 @@ p {
     line-height: 85px;
     color: #000000;
 }
+footer{
+    margin: 40px 0;
+}
+
+footer .contactbox{
+    background-color: var(--secondary-color);
+    padding: 30px 120px;
+    border-radius: 20px;
+    width: 1160px;
+}
+
+footer .contactbox h4{
+    font-family: var(--heading-font-family);
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 64px;
+}
+
+footer .contactbox p{
+    color: var(--text-color);
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 400;
+    margin: 0;
+
+}
+footer .email{
+    text-decoration: none;
+    font-family: var(--default-font-family);
+    color: #000000;
+    font-size: 24px;
+    text-align: center;
+    font-weight: 400;
+}
+
+footer .email:hover{
+    color: var(--branding-color);
+}
+
+footer .social-media-links a{
+   margin: 0 20px;
+   color: var(--branding-color);
+   background: var(--secondary-color);
+   font-size: 18px;
+   padding: 10px 14px;
+   border-radius: 50%;
+   transition: all 120ms ease-in-out;
+}
+
+footer .social-media-links a:hover{
+    color: #ffff;
+    background-color: var(--branding-color);
+}
+
+.contact-box{
+    background: var(--branding-color);
+    color: #ffff;
+    width: 200px;
+    border-radius: 4px;
+    text-align: center;
+    padding: 18px 30px;
+}
+
+.contact-box:hover {
+
+background: #000000;
+  color: #ffff;
+}
 
 @media (max-width: 900px) {
   .main {
@@ -258,4 +331,11 @@ p {
     padding: 0;
     text-align: center;
   }
+
+
+  footer .contactbox h4{
+    font-size: 25px;
+  }
+
+  
 }
