@@ -52,12 +52,13 @@ p {
 }
 
 .main-page {
-  padding-left: 150px;
+  padding-left: 160px;
+
 }
 .main-page h1 {
   font-family: var(--heading-font-family);
   font-size: 64px;
-  line-height: 1.5;
+  line-height: 1.2;
   font-style: normal;
   font-weight: 400;
   color: var(--text-color);
@@ -290,6 +291,7 @@ footer .social-media-links a:hover {
   border-radius: 250px 750px 250px 750px / 750px 250px 750px 250px;
   animation: wobble 8s ease-in-out alternate infinite;
   max-width: 300px;
+  border: 3px solid black;
 }
 @keyframes wobble {
   50% {
@@ -302,15 +304,17 @@ footer .social-media-links a:hover {
 
 @media (max-width: 900px) {
   .main-page {
-    padding: 0;
+    padding: 10px;
     text-align: center;
   }
    .main-page h1 {
     font-size: 39px;
   }
-
-  .main p {
-    font-size: 25px;
+  .index-icon{
+    font-size: 20px;
+  }
+  .main-page p {
+    font-size: 15px;
   }
   .body h2 {
     font-size: 43px;
