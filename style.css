@@ -41,38 +41,39 @@ p {
   font-size: 14px;
 }
 
-.main {
-  background: var(--secondary-color);
-  text-align: center;
-  padding: 80px 20px;
+/* .intro {
+  padding-top: 100px;
+  padding-bottom: 200px;
+  margin-left: 200px;
+} */
+
+.index-icon {
+  color: #000000;
 }
 
-.main p {
-  font-size: 36px;
-  font-weight: bold;
-  margin: 0;
-  color: var(--text-color);
+.main-page {
+  padding-left: 150px;
 }
-.main h2 {
-  font-family: var(--default-font-family);
-  font-size: 24px;
-  line-height: 36px;
+.main-page h1 {
+  font-family: var(--heading-font-family);
+  font-size: 64px;
+  line-height: 1.5;
   font-style: normal;
   font-weight: 400;
   color: var(--text-color);
 }
 
-.main a {
-  background: var(--branding-color);
-  color: #ffff;
-  padding: 18px 30px;
-  border-radius: 4px;
-  font-size: 18px;
-  line-height: 27px;
+.main-page p {
+  font-family: var(--default-font-family);
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--text-color);
+  font-weight: 400;
+  opacity: 70%;
 }
-.main a:hover {
-  background: #000000;
-  color: #ffff;
+
+.main-icon {
+  font-size: 20px;
 }
 
 .body img {
@@ -133,19 +134,16 @@ p {
   padding: 18px 30px;
 }
 
-.about-page {
-  padding: 160px 20px;
-}
-
 .about-content {
   margin: 30px;
 }
+
 .about-content a {
   text-decoration: none;
 }
 .headshot {
-  width: 560px;
-  border-radius: 10px;
+  width: 500px;
+  border-radius: 50%;
 }
 
 .about-page a:hover {
@@ -154,12 +152,12 @@ p {
 }
 
 .project-page {
-  padding: 160px 20px;
+  padding: 0px;
 }
 
 .project-heading {
   font-family: var(--heading-font-family);
-  font-size: 64px;
+  font-size: 50px;
   line-height: 85px;
   font-weight: 700;
   color: #000000;
@@ -209,6 +207,7 @@ p {
   line-height: 85px;
   color: #000000;
 }
+
 footer {
   margin: 40px 0;
 }
@@ -280,17 +279,36 @@ footer .social-media-links a:hover {
   color: var(--branding-color) !important;
 }
 
+.tech-stack-icon {
+  width: 40px;
+}
+.tech-stack-text {
+  opacity: 70%;
+  font-family: var(--heading-font-family);
+}
+.wobble-photo {
+  border-radius: 250px 750px 250px 750px / 750px 250px 750px 250px;
+  animation: wobble 8s ease-in-out alternate infinite;
+  max-width: 300px;
+}
+@keyframes wobble {
+  50% {
+    border-radius: 750px 550px 350px 750px / 350px 750px 550px 450px;
+  }
+  100% {
+    border-radius: 750px 250px 750px 250px / 250px 750px 250px 750px;
+  }
+}
+
 @media (max-width: 900px) {
-  .main {
+  .main-page {
     padding: 0;
     text-align: center;
   }
-  .main h1 {
-    font-size: 59px;
+   .main-page h1 {
+    font-size: 39px;
   }
-  .main h2 {
-    font-size: 20px;
-  }
+
   .main p {
     font-size: 25px;
   }
@@ -309,12 +327,17 @@ footer .social-media-links a:hover {
   }
 
   .about-page h1 {
-    font-size: 59px;
-    line-height: 56px;
+    font-size: 30px;
+    line-height: 1;
   }
 
+  .headshot{
+    display: block;
+    margin: 0 auto;
+  }
   .about-page h2 {
-    font-size: 20px;
+    font-size: 18px;
+    opacity: 80%;
   }
 
   .about-page p {
